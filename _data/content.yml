@@ -1,92 +1,103 @@
-# Hero Section
 hero:
   available_for_freelance: true
-  greeting: "Hi, I'm"
-  name: "Alex Morgan"
-  tagline: "I build things for the web."
-  description: "Full-Stack Developer & Designer with 5+ years of experience crafting clean, scalable, and user-centric digital products. Currently focused on modern web technologies and design systems."
-  primary_button: "View My Work"
-  secondary_button: "Get in Touch"
-
-# About Section
+  greeting: Hi, I'm
+  name: Aamir Shehzad
+  tagline: I build things for the web.
+  description: Full-Stack Developer & Designer with 5+ years of experience crafting clean, scalable, and user-centric digital products. Currently focused on modern web technologies and design systems.
+  primary_button: View My Work
+  secondary_button: Get in Touch
 about:
-  title: "Designing with purpose,<br>building with precision"
-  subtitle: "A blend of creativity and engineering — I bring ideas to life through code and design."
-  image: "assets/images/profile.png"
+  title: Designing with purpose,<br>building with precision
+  subtitle: A blend of creativity and engineering — I bring ideas to life through code and design.
+  image: assets/images/profile.png
   paragraphs:
-    - "I'm a passionate developer and designer who loves creating beautiful, functional digital experiences. With a background in computer science and a keen eye for design, I bridge the gap between aesthetics and functionality."
-    - "When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or enjoying a good cup of coffee while sketching ideas for my next project. I believe in continuous learning and pushing the boundaries of what's possible on the web."
+    - I'm a passionate developer and designer who loves creating beautiful, functional digital experiences. With a background in computer science and a keen eye for design, I bridge the gap between aesthetics and functionality.
+    - When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or enjoying a good cup of coffee while sketching ideas for my next project. I believe in continuous learning and pushing the boundaries of what's possible on the web.
   highlights:
-    - number: "5+"
-      label: "Years Experience"
-    - number: "50+"
-      label: "Projects Delivered"
-    - number: "30+"
-      label: "Happy Clients"
-
-# Skills Section
+    - number: 5+
+      label: Years Experience
+    - number: 50+
+      label: Projects Delivered
+    - number: 30+
+      label: Happy Clients
 skills:
-  title: "Technologies I work with"
-  subtitle: "A curated toolkit of modern technologies and frameworks I use to bring ideas to life."
+  title: Technologies I work with
+  subtitle: A curated toolkit of modern technologies and frameworks I use to bring ideas to life.
   categories:
-    - title: "Frontend"
-      icon: "🎨"
-      tags: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Vue.js", "Tailwind CSS"]
-    - title: "Backend"
-      icon: "⚙️"
-      tags: ["Node.js", "Python", "Express", "Django", "PostgreSQL", "MongoDB", "REST APIs", "GraphQL"]
-    - title: "DevOps & Tools"
-      icon: "🚀"
-      tags: ["Git", "Docker", "AWS", "CI/CD", "Figma", "Vercel", "Linux", "Webpack"]
-
-# Experience Section
+    - title: Frontend
+      icon: 🎨
+      tags:
+        - HTML5
+        - CSS3
+        - JavaScript
+        - TypeScript
+        - React
+        - Next.js
+        - Vue.js
+        - Tailwind CSS
+    - title: Backend
+      icon: ⚙️
+      tags:
+        - Node.js
+        - Python
+        - Express
+        - Django
+        - PostgreSQL
+        - MongoDB
+        - REST APIs
+        - GraphQL
+    - title: DevOps & Tools
+      icon: 🚀
+      tags:
+        - Git
+        - Docker
+        - AWS
+        - CI/CD
+        - Figma
+        - Vercel
+        - Linux
+        - Webpack
 experience:
-  title: "Where I've worked"
-  subtitle: "A timeline of my professional journey and the impact I've made along the way."
+  title: Where I've worked
+  subtitle: A timeline of my professional journey and the impact I've made along the way.
   jobs:
-    - date: "2023 — Present"
-      title: "Senior Full-Stack Developer"
-      company: "TechForward Inc. • San Francisco, CA"
-      description: "Leading development of a B2B SaaS platform serving 10k+ users. Architected microservices backend, implemented CI/CD pipelines, and mentored a team of 4 junior developers."
-    - date: "2021 — 2023"
-      title: "Full-Stack Developer"
-      company: "PixelCraft Studio • Remote"
-      description: "Built and maintained 20+ client websites and web applications. Specialized in React/Next.js front-ends with Node.js backends. Improved site performance scores by an average of 40%."
-    - date: "2019 — 2021"
-      title: "Junior Developer & Designer"
-      company: "CreativeWorks Agency • New York, NY"
-      description: "Started as a design intern and grew into a developer role. Created responsive landing pages, email templates, and small web applications for diverse clients across various industries."
-
-# Testimonials Section
+    - date: 2023 — Present
+      title: Senior Full-Stack Developer
+      company: TechForward Inc. • San Francisco, CA
+      description: Leading development of a B2B SaaS platform serving 10k+ users. Architected microservices backend, implemented CI/CD pipelines, and mentored a team of 4 junior developers.
+    - date: 2021 — 2023
+      title: Full-Stack Developer
+      company: PixelCraft Studio • Remote
+      description: Built and maintained 20+ client websites and web applications. Specialized in React/Next.js front-ends with Node.js backends. Improved site performance scores by an average of 40%.
+    - date: 2019 — 2021
+      title: Junior Developer & Designer
+      company: CreativeWorks Agency • New York, NY
+      description: Started as a design intern and grew into a developer role. Created responsive landing pages, email templates, and small web applications for diverse clients across various industries.
 testimonials:
-  title: "What people say"
-  subtitle: "Kind words from clients and colleagues I've had the pleasure of working with."
+  title: What people say
+  subtitle: Kind words from clients and colleagues I've had the pleasure of working with.
   reviews:
-    - quote: "Alex delivered an outstanding product that exceeded our expectations. The attention to detail and clean code quality made our development process seamless. Highly recommended!"
-      author: "Sarah Chen"
-      role: "CTO at TechForward Inc."
-    - quote: "Working with Alex was an absolute pleasure. They took our vague concept and transformed it into a polished, user-friendly application. The design sensibility combined with technical skill is rare to find."
-      author: "Marcus Rivera"
-      role: "Founder at PixelCraft Studio"
-    - quote: "The landing page Alex designed for us increased our conversion rate by 35%. Fast, responsive, and pixel-perfect — everything a startup could ask for. Will definitely work together again."
-      author: "Emily Watson"
-      role: "Marketing Director at LaunchPad"
-
-# Contact Section
+    - quote: Alex delivered an outstanding product that exceeded our expectations. The attention to detail and clean code quality made our development process seamless. Highly recommended!
+      author: Sarah Chen
+      role: CTO at TechForward Inc.
+    - quote: Working with Alex was an absolute pleasure. They took our vague concept and transformed it into a polished, user-friendly application. The design sensibility combined with technical skill is rare to find.
+      author: Marcus Rivera
+      role: Founder at PixelCraft Studio
+    - quote: The landing page Alex designed for us increased our conversion rate by 35%. Fast, responsive, and pixel-perfect — everything a startup could ask for. Will definitely work together again.
+      author: Emily Watson
+      role: Marketing Director at LaunchPad
 contact:
-  title: "Let's work together"
-  subtitle: "Have a project in mind? I'd love to hear about it. Send me a message and let's create something great."
-  email: "alex@example.com"
-  location: "San Francisco, CA"
-  website: "alexmorgan.dev"
+  title: Let's work together
+  subtitle: Have a project in mind? I'd love to hear about it. Send me a message and let's create something great.
+  email: alex@example.com
+  location: San Francisco, CA
+  website: alexmorgan.dev
+  formspree_url: https://formspree.io/f/your-form-id
   social:
-    github: "#"
-    linkedin: "#"
-    twitter: "#"
-    dribbble: "#"
-  formspree_url: "https://formspree.io/f/your-form-id"
-
-# Footer
+    github: '#'
+    linkedin: '#'
+    twitter: '#'
+    dribbble: '#'
 footer:
-  brand_text: "Full-Stack Developer & Designer based in San Francisco, crafting beautiful digital experiences with clean code and modern design."
-  copyright: "&copy; 2024 Alex Morgan. All rights reserved."
+  brand_text: Full-Stack Developer & Designer based in San Francisco, crafting beautiful digital experiences with clean code and modern design.
+  copyright: '&copy; 2024 Alex Morgan. All rights reserved.'
