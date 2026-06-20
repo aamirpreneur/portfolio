@@ -2,8 +2,6 @@
    Personal Portfolio — JavaScript
    ============================================ */
 
-document.addEventListener('DOMContentLoaded', () => {
-
   // ============================================
   // NAVBAR — Scroll Behavior & Mobile Menu
   // ============================================
@@ -348,5 +346,3 @@ document.addEventListener('DOMContentLoaded', () => {
       closeMobileMenu();
     }
   });
-
-});
