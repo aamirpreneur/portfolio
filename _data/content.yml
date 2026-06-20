@@ -12,7 +12,7 @@ hero:
 about:
   title: "Bridging Deep Learning<br>and Advanced Mathematics"
   subtitle: "PhD computational researcher solving complex scientific problems with AI."
-  image: "assets/images/profile.png"
+  image: "assets/images/profile.jpg"
   paragraphs:
     - "Your simulation is too slow, too expensive, or mathematically breaking down at the boundaries. That is the problem most of my clients come to me with. I solve it by building custom Physics-Informed Neural Networks that work where standard tools fail."
     - "I am a PhD computational researcher with a 100% Job Success Score on Upwork. I have held a research placement at Imperial College London focusing on nonlinear wave equations and soliton dynamics. I also serve as a University instructor in Calculus and Numerical Analysis at GIKI, giving me the pedagogical depth to build AI math logic that is both rigorous and explainable."
