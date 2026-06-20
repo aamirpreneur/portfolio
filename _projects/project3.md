@@ -1,8 +1,8 @@
 ---
-title: "SaaS Landing Page"
-description: "A conversion-optimized landing page with stunning animations, responsive design, and A/B testing integration for a SaaS startup."
+title: "Mathematical Logic for AI Training"
+description: "Authored 200+ advanced Chain-of-Thought (CoT) reasoning traces spanning Topology, Calculus, Probability, and Abstract Algebra. Built error-free datasets and solvers for LLM Supervised Fine-Tuning."
 image: "assets/images/project-3.png"
-tags: ["Next.js", "Framer Motion", "Figma"]
-live_demo_url: "#"
-source_code_url: "#"
+tags: ["LLM Fine-Tuning", "CoT", "Advanced Mathematics", "Python"]
+live_demo_url: ""
+source_code_url: ""
 ---
