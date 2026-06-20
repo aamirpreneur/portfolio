@@ -70,6 +70,14 @@ education:
       title: "BS Mathematics"
       company: "University of Wah"
       description: "CGPA: 3.12 / 4.00."
+    - date: "Jul 2014 - Aug 2016"
+      title: "FSc Pre-Engineering"
+      company: "Army Public School & College"
+      description: "Marks: 740 / 1100."
+    - date: "Apr 2012 - Jun 2014"
+      title: "Matric (Science)"
+      company: "F.G Boys Public School"
+      description: "Marks: 724 / 1050."
 
 # Testimonials Section
 testimonials:
@@ -90,14 +98,15 @@ testimonials:
 contact:
   title: "Let's Solve Your Problem"
   subtitle: "Describe your problem in a message. I will tell you in plain terms whether I can solve it and exactly how."
-  email: "contact@example.com"
+  email: "Hire me on Upwork"
   location: "Islamabad, Pakistan"
-  website: "Upwork Profile"
+  website: "https://github.com/aamirpreneur"
+  resume_url: "#"
   social:
-    github: "#"
-    linkedin: "#"
-    twitter: "#"
-    dribbble: "#"
+    github: "https://github.com/aamirpreneur"
+    linkedin: "https://linkedin.com/"
+    twitter: "https://twitter.com/"
+    dribbble: ""
   formspree_url: "https://formspree.io/f/your-form-id"
 
 # Footer
