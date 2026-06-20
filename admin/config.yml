@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/your-repo-name # MUST BE UPDATED
+  repo: aamirpreneur/portfolio
   branch: main
   
 media_folder: "assets/images"
