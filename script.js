@@ -281,21 +281,7 @@
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
-  // ============================================
-  // SMOOTH SCROLL FOR ANCHOR LINKS
-  // ============================================
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      const targetId = anchor.getAttribute('href');
-      if (targetId === '#') return;
-
-      const target = document.querySelector(targetId);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
+  // Smooth scroll is handled by CSS: scroll-behavior: smooth + scroll-padding-top on html
 
   // ============================================
   // ABOUT HIGHLIGHTS COUNTER ANIMATION
