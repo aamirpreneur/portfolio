@@ -1,103 +1,92 @@
+# Hero Section
 hero:
   available_for_freelance: true
-  greeting: Hi, I'm
-  name: Aamir Shehzad
-  tagline: I build things for the web.
-  description: Full-Stack Developer & Designer with 5+ years of experience crafting clean, scalable, and user-centric digital products. Currently focused on modern web technologies and design systems.
-  primary_button: View My Work
-  secondary_button: Get in Touch
+  greeting: "Hi, I'm"
+  name: "Aamir S."
+  tagline: "PhD SciML Researcher & Applied Mathematician."
+  description: "I build custom Physics-Informed Neural Networks (PINNs) in PyTorch to solve complex PDE problems where standard tools fail. Specializing in AI Math Logic, Chain-of-Thought reasoning, and high-fidelity surrogate modeling."
+  primary_button: "View My Work"
+  secondary_button: "Hire Me on Upwork"
+
+# About Section
 about:
-  title: Designing with purpose,<br>building with precision
-  subtitle: A blend of creativity and engineering — I bring ideas to life through code and design.
-  image: assets/images/profile.png
+  title: "Bridging Deep Learning<br>and Advanced Mathematics"
+  subtitle: "PhD computational researcher solving complex scientific problems with AI."
+  image: "assets/images/profile.png"
   paragraphs:
-    - I'm a passionate developer and designer who loves creating beautiful, functional digital experiences. With a background in computer science and a keen eye for design, I bridge the gap between aesthetics and functionality.
-    - When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or enjoying a good cup of coffee while sketching ideas for my next project. I believe in continuous learning and pushing the boundaries of what's possible on the web.
+    - "Your simulation is too slow, too expensive, or mathematically breaking down at the boundaries. That is the problem most of my clients come to me with. I solve it by building custom Physics-Informed Neural Networks that work where standard tools fail."
+    - "I am a PhD computational researcher with a 100% Job Success Score on Upwork. I have held a research placement at Imperial College London focusing on nonlinear wave equations and soliton dynamics. I also serve as a University instructor in Calculus and Numerical Analysis at GIKI, giving me the pedagogical depth to build AI math logic that is both rigorous and explainable."
   highlights:
-    - number: 5+
-      label: Years Experience
-    - number: 50+
-      label: Projects Delivered
-    - number: 30+
-      label: Happy Clients
+    - number: "100%"
+      label: "Job Success Score"
+    - number: "10k+"
+      label: "Earned on Upwork"
+    - number: "13"
+      label: "Completed Projects"
+
+# Skills Section
 skills:
-  title: Technologies I work with
-  subtitle: A curated toolkit of modern technologies and frameworks I use to bring ideas to life.
+  title: "Technologies & Expertise"
+  subtitle: "My computational and mathematical toolkit."
   categories:
-    - title: Frontend
-      icon: 🎨
-      tags:
-        - HTML5
-        - CSS3
-        - JavaScript
-        - TypeScript
-        - React
-        - Next.js
-        - Vue.js
-        - Tailwind CSS
-    - title: Backend
-      icon: ⚙️
-      tags:
-        - Node.js
-        - Python
-        - Express
-        - Django
-        - PostgreSQL
-        - MongoDB
-        - REST APIs
-        - GraphQL
-    - title: DevOps & Tools
-      icon: 🚀
-      tags:
-        - Git
-        - Docker
-        - AWS
-        - CI/CD
-        - Figma
-        - Vercel
-        - Linux
-        - Webpack
+    - title: "Scientific Machine Learning"
+      icon: "🧠"
+      tags: ["PyTorch", "PINNs", "DeepXDE", "TensorFlow", "Deep Learning", "SciML", "JAX"]
+    - title: "Mathematics & Physics"
+      icon: "📐"
+      tags: ["Nonlinear PDEs", "Numerical Analysis", "Calculus", "Linear Algebra", "Fluid Dynamics", "Probability", "Geometry"]
+    - title: "Data & Programming"
+      icon: "💻"
+      tags: ["Python", "NumPy", "SciPy", "Pandas", "Matplotlib", "Algorithm Development", "Data Analysis"]
+
+# Experience Section
 experience:
-  title: Where I've worked
-  subtitle: A timeline of my professional journey and the impact I've made along the way.
+  title: "Professional Background"
+  subtitle: "My academic and teaching journey."
   jobs:
-    - date: 2023 — Present
-      title: Senior Full-Stack Developer
-      company: TechForward Inc. • San Francisco, CA
-      description: Leading development of a B2B SaaS platform serving 10k+ users. Architected microservices backend, implemented CI/CD pipelines, and mentored a team of 4 junior developers.
-    - date: 2021 — 2023
-      title: Full-Stack Developer
-      company: PixelCraft Studio • Remote
-      description: Built and maintained 20+ client websites and web applications. Specialized in React/Next.js front-ends with Node.js backends. Improved site performance scores by an average of 40%.
-    - date: 2019 — 2021
-      title: Junior Developer & Designer
-      company: CreativeWorks Agency • New York, NY
-      description: Started as a design intern and grew into a developer role. Created responsive landing pages, email templates, and small web applications for diverse clients across various industries.
+    - date: "2023 — Present"
+      title: "Graduate Assistant / PhD Researcher"
+      company: "Ghulam Ishaq Khan Institute of Engineering Sciences and Technology"
+      description: "Developing novel Physics-Informed Neural Networks (PINNs) in PyTorch to solve challenging PDEs. Instructing undergraduate courses including Numerical Analysis and Calculus I."
+    - date: "2022 — 2023"
+      title: "College Teacher (Mathematics)"
+      company: "Jinnah Education System"
+      description: "Taught advanced mathematics, focusing on conceptual clarity and rigorous problem-solving techniques."
+    - date: "2021 — 2022"
+      title: "Math Teacher"
+      company: "Nova City School"
+      description: "Instructed students in foundational mathematics and analytical thinking."
+
+# Testimonials Section
 testimonials:
-  title: What people say
-  subtitle: Kind words from clients and colleagues I've had the pleasure of working with.
+  title: "Client Feedback"
+  subtitle: "What my Upwork clients say about my deliverables."
   reviews:
-    - quote: Alex delivered an outstanding product that exceeded our expectations. The attention to detail and clean code quality made our development process seamless. Highly recommended!
-      author: Sarah Chen
-      role: CTO at TechForward Inc.
-    - quote: Working with Alex was an absolute pleasure. They took our vague concept and transformed it into a polished, user-friendly application. The design sensibility combined with technical skill is rare to find.
-      author: Marcus Rivera
-      role: Founder at PixelCraft Studio
-    - quote: The landing page Alex designed for us increased our conversion rate by 35%. Fast, responsive, and pixel-perfect — everything a startup could ask for. Will definitely work together again.
-      author: Emily Watson
-      role: Marketing Director at LaunchPad
+    - quote: "This guy is the best freelancer I've ever worked with on Upwork. Brainstorming and conversating with him was incredible. Working with you feels less like a contractor and more like a partner."
+      author: "Romaine"
+      role: "Discount Formula Calculator Client"
+    - quote: "Aamir was technical, diligent, and thorough in his delivery. Quality of his deliverables was very high and helped us achieve the outcomes we were targeting. Would work with him again."
+      author: "AI Training Client"
+      role: "Math Expert for AI Training"
+    - quote: "Easy to work with. Extremely professional. Prompt response."
+      author: "STEM Professional Client"
+      role: "Upwork Client"
+
+# Contact Section
 contact:
-  title: Let's work together
-  subtitle: Have a project in mind? I'd love to hear about it. Send me a message and let's create something great.
-  email: alex@example.com
-  location: San Francisco, CA
-  website: alexmorgan.dev
-  formspree_url: https://formspree.io/f/your-form-id
+  title: "Let's Solve Your Problem"
+  subtitle: "Describe your problem in a message. I will tell you in plain terms whether I can solve it and exactly how."
+  email: "contact@example.com"
+  location: "Islamabad, Pakistan"
+  website: "Upwork Profile"
   social:
-    github: '#'
-    linkedin: '#'
-    twitter: '#'
-    dribbble: '#'
+    github: "#"
+    linkedin: "#"
+    twitter: "#"
+    dribbble: "#"
+  formspree_url: "https://formspree.io/f/your-form-id"
+
+# Footer
 footer:
-  brand_text: Full-Stack Developer & Designer based in San Francisco, crafting beautiful digital experiences with clean code and modern design.
-  copyright: '&copy; 2024 Alex Morgan. All rights reserved.'
+  brand_text: "PhD SciML Researcher | Custom PyTorch PDEs | AI Math Logic & CoT"
+  copyright: "&copy; 2026 Aamir S. All rights reserved."

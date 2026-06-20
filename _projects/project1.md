@@ -1,8 +1,8 @@
 ---
-title: "Dashboard Analytics Platform"
-description: "A comprehensive analytics dashboard with real-time data visualization, custom reporting, and team collaboration features."
+title: "Hertz Contact PINNs"
+description: "Developed and validated an elastoplasticity framework utilizing Physics-Informed Neural Networks to model Hertz contact stresses efficiently without traditional FEA constraints."
 image: "assets/images/project-1.png"
-tags: ["React", "Node.js", "PostgreSQL"]
-live_demo_url: "#"
-source_code_url: "#"
+tags: ["PyTorch", "PINNs", "Solid Mechanics"]
+live_demo_url: ""
+source_code_url: ""
 ---
