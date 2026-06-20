@@ -45,6 +45,7 @@ layout: null
         <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
         <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
         <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
         <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
         <li><a href="#blog" class="nav-link" data-section="blog">Blog</a></li>
         <li><a href="#contact" class="nav-cta" id="navContactBtn">Let's Talk</a></li>
@@ -267,7 +268,7 @@ layout: null
   <!-- ============================================
        TESTIMONIALS SECTION
        ============================================ -->
-  <section class="section" id="testimonials">
+  <section class="section section--alt" id="testimonials">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Testimonials</span>
@@ -311,7 +312,7 @@ layout: null
   <!-- ============================================
        BLOG SECTION
        ============================================ -->
-  <section class="section section--alt" id="blog">
+  <section class="section" id="blog">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Blog</span>
@@ -341,7 +342,7 @@ layout: null
   <!-- ============================================
        CONTACT SECTION
        ============================================ -->
-  <section class="section" id="contact">
+  <section class="section section--alt" id="contact">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Get in Touch</span>
@@ -357,10 +358,10 @@ layout: null
           <div class="contact-details">
             <div class="contact-detail">
               <div class="contact-detail-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
               </div>
               <div class="contact-detail-text">
-                <strong>Email</strong>
+                <strong>Freelance</strong>
                 {{ site.data.content.contact.email }}
               </div>
             </div>
@@ -375,11 +376,11 @@ layout: null
             </div>
             <div class="contact-detail">
               <div class="contact-detail-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               </div>
               <div class="contact-detail-text">
-                <strong>Website</strong>
-                {{ site.data.content.contact.website }}
+                <strong>GitHub</strong>
+                <a href="{{ site.data.content.contact.website }}" class="contact-link" target="_blank" rel="noopener noreferrer">{{ site.data.content.contact.website }}</a>
               </div>
             </div>
           </div>
@@ -462,7 +463,7 @@ layout: null
             <li><a href="{{ site.data.content.contact.social.github }}" class="footer-link">GitHub</a></li>
             <li><a href="{{ site.data.content.contact.social.linkedin }}" class="footer-link">LinkedIn</a></li>
             <li><a href="{{ site.data.content.contact.social.twitter }}" class="footer-link">Twitter</a></li>
-            <li><a href="{{ site.data.content.contact.social.dribbble }}" class="footer-link">Dribbble</a></li>
+            {% if site.data.content.contact.social.dribbble != "" %}<li><a href="{{ site.data.content.contact.social.dribbble }}" class="footer-link">Dribbble</a></li>{% endif %}
           </ul>
         </div>
       </div>
