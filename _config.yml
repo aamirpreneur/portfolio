@@ -1,0 +1,32 @@
+title: Alex Morgan — Portfolio
+email: alex@example.com
+description: >-
+  Portfolio of Alex Morgan — Full-Stack Developer & Designer crafting digital experiences with clean code and modern design.
+url: "" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude these files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - README.md
+  - task.md
+  - walkthrough.md
+  - implementation_plan.md
+
+collections:
+  projects:
+    output: false # Projects are rendered on index, no separate pages needed for now
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

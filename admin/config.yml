@@ -1,0 +1,148 @@
+backend:
+  name: github
+  repo: your-username/your-repo-name # MUST BE UPDATED
+  branch: main
+  
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+collections:
+  # 1. Main Site Content (Stored in a single _data/content.yml file)
+  - name: "site_content"
+    label: "Website Content"
+    files:
+      - label: "Site Configuration"
+        name: "content"
+        file: "_data/content.yml"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Available for freelance badge", name: "available_for_freelance", widget: "boolean"}
+              - {label: "Greeting", name: "greeting", widget: "string"}
+              - {label: "Your Name", name: "name", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Primary Button Text", name: "primary_button", widget: "string"}
+              - {label: "Secondary Button Text", name: "secondary_button", widget: "string"}
+          
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Profile Image", name: "image", widget: "image"}
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: {label: "Text", name: "text", widget: "text"}
+              - label: "Number Highlights"
+                name: "highlights"
+                widget: "list"
+                fields:
+                  - {label: "Number (e.g. 5+)", name: "number", widget: "string"}
+                  - {label: "Label", name: "label", widget: "string"}
+
+          - label: "Skills Section"
+            name: "skills"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Skill Categories"
+                name: "categories"
+                widget: "list"
+                fields:
+                  - {label: "Category Name", name: "title", widget: "string"}
+                  - {label: "Emoji Icon", name: "icon", widget: "string"}
+                  - label: "Skills"
+                    name: "tags"
+                    widget: "list"
+                    field: {label: "Skill", name: "tag", widget: "string"}
+
+          - label: "Experience Section"
+            name: "experience"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Jobs"
+                name: "jobs"
+                widget: "list"
+                fields:
+                  - {label: "Date", name: "date", widget: "string"}
+                  - {label: "Job Title", name: "title", widget: "string"}
+                  - {label: "Company", name: "company", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+
+          - label: "Testimonials Section"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Reviews"
+                name: "reviews"
+                widget: "list"
+                fields:
+                  - {label: "Quote", name: "quote", widget: "text"}
+                  - {label: "Author", name: "author", widget: "string"}
+                  - {label: "Role", name: "role", widget: "string"}
+
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "Website", name: "website", widget: "string"}
+              - {label: "Formspree URL", name: "formspree_url", widget: "string"}
+              - label: "Social Links"
+                name: "social"
+                widget: "object"
+                fields:
+                  - {label: "GitHub URL", name: "github", widget: "string", required: false}
+                  - {label: "LinkedIn URL", name: "linkedin", widget: "string", required: false}
+                  - {label: "Twitter URL", name: "twitter", widget: "string", required: false}
+                  - {label: "Dribbble URL", name: "dribbble", widget: "string", required: false}
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Brand Text", name: "brand_text", widget: "text"}
+              - {label: "Copyright", name: "copyright", widget: "string"}
+
+  # 2. Projects (Stored as individual Markdown files in _projects)
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
+      - label: "Technologies used (Tags)"
+        name: "tags"
+        widget: "list"
+        field: {label: "Tag", name: "tag", widget: "string"}
+      - {label: "Live Demo URL", name: "live_demo_url", widget: "string", required: false}
+      - {label: "Source Code URL", name: "source_code_url", widget: "string", required: false}
+
+  # 3. Blog Posts (Stored as individual Markdown files in _posts)
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Excerpt (Short Description)", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
