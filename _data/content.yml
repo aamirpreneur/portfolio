@@ -42,20 +42,34 @@ skills:
 # Experience Section
 experience:
   title: "Professional Background"
-  subtitle: "My academic and teaching journey."
+  subtitle: "My research and teaching journey."
   jobs:
-    - date: "2023 — Present"
-      title: "Graduate Assistant / PhD Researcher"
+    - date: "Sep 2023 - Present"
+      title: "PhD Scholar / Researcher"
       company: "Ghulam Ishaq Khan Institute of Engineering Sciences and Technology"
-      description: "Developing novel Physics-Informed Neural Networks (PINNs) in PyTorch to solve challenging PDEs. Instructing undergraduate courses including Numerical Analysis and Calculus I."
-    - date: "2022 — 2023"
-      title: "College Teacher (Mathematics)"
-      company: "Jinnah Education System"
-      description: "Taught advanced mathematics, focusing on conceptual clarity and rigorous problem-solving techniques."
-    - date: "2021 — 2022"
+      description: "Architected custom PINN frameworks in PyTorch for nonlinear wave equations. Solved the Regularized Long-Width (RLW) equation. Validated PINN models against traditional numerical solvers for high-fidelity results."
+    - date: "Nov 2020 - Sep 2023"
+      title: "Mathematics Teacher"
+      company: "Jinnah Education System & Iv Schoolz"
+      description: "Instructed students in advanced mathematics, focusing on foundational understanding and problem-solving skills."
+    - date: "Nov 2021 - Feb 2022"
       title: "Math Teacher"
       company: "Nova City School"
-      description: "Instructed students in foundational mathematics and analytical thinking."
+      description: "Taught mathematics with a focus on analytical thinking."
+
+# Education Section
+education:
+  title: "Academic History"
+  subtitle: "My educational background in Mathematics."
+  degrees:
+    - date: "Sep 2020 - Jul 2022"
+      title: "MS Mathematics"
+      company: "COMSATS University Islamabad"
+      description: "CGPA: 3.72 / 4.00. Thesis: Prediction of Diabetes Using Improved Artificial Neural Network Model."
+    - date: "Oct 2016 - Jul 2020"
+      title: "BS Mathematics"
+      company: "University of Wah"
+      description: "CGPA: 3.12 / 4.00."
 
 # Testimonials Section
 testimonials:

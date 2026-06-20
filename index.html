@@ -238,6 +238,33 @@ layout: null
   </section>
 
   <!-- ============================================
+       EDUCATION SECTION
+       ============================================ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">{{ site.data.content.education.title }}</h2>
+        <p class="section-subtitle">{{ site.data.content.education.subtitle }}</p>
+      </div>
+
+      <div class="timeline">
+        {% for degree in site.data.content.education.degrees %}
+        <div class="timeline-item reveal reveal-delay-{{ forloop.index0 }}">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">{{ degree.date }}</span>
+          <div class="timeline-card">
+            <h3 class="timeline-title">{{ degree.title }}</h3>
+            <p class="timeline-company">{{ degree.company }}</p>
+            <p class="timeline-description">{{ degree.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
        TESTIMONIALS SECTION
        ============================================ -->
   <section class="section" id="testimonials">

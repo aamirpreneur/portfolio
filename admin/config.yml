@@ -77,6 +77,21 @@ collections:
                   - {label: "Company", name: "company", widget: "string"}
                   - {label: "Description", name: "description", widget: "text"}
 
+          - label: "Education Section"
+            name: "education"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Degrees"
+                name: "degrees"
+                widget: "list"
+                fields:
+                  - {label: "Date", name: "date", widget: "string"}
+                  - {label: "Degree Title", name: "title", widget: "string"}
+                  - {label: "Institution", name: "company", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+
           - label: "Testimonials Section"
             name: "testimonials"
             widget: "object"
