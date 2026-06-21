@@ -1,0 +1,92 @@
+cv:
+  name: Aamir Shehzad
+  label: PhD SciML Researcher & Applied Mathematician
+  email: asphoto710@gmail.com
+  location: Islamabad, Pakistan
+  image: ""
+  summary: PhD computational researcher building custom Physics-Informed Neural Networks (PINNs) in PyTorch. 100% Job Success Score on Upwork. Specializing in AI Math Logic, Chain-of-Thought reasoning, and high-fidelity surrogate modeling.
+
+  social_networks:
+    - network: GitHub
+      username: aamirpreneur
+
+  sections:
+    Education:
+      - institution: Ghulam Ishaq Khan Institute of Engineering Sciences and Technology
+        location: Topi, Pakistan
+        area: Scientific Machine Learning / Applied Mathematics
+        studyType: PhD (In Progress)
+        start_date: 2023
+        end_date: Present
+        highlights:
+          - Architecting custom PINN frameworks in PyTorch for nonlinear wave equations
+          - Solving the Regularized Long-Wave (RLW) equation using PINNs
+          - Validating PINN models against traditional numerical solvers
+
+      - institution: COMSATS University Islamabad
+        location: Islamabad, Pakistan
+        area: Mathematics
+        studyType: MS
+        start_date: 2020
+        end_date: 2022
+        score: "CGPA: 3.72 / 4.00"
+        highlights:
+          - "Thesis: Prediction of Diabetes Using Improved Artificial Neural Network Model"
+
+      - institution: University of Wah
+        location: Wah, Pakistan
+        area: Mathematics
+        studyType: BS
+        start_date: 2016
+        end_date: 2020
+        score: "CGPA: 3.12 / 4.00"
+
+    Experience:
+      - company: Ghulam Ishaq Khan Institute of Engineering Sciences and Technology
+        position: PhD Scholar / Researcher
+        location: Topi, Pakistan
+        start_date: 2023
+        end_date: Present
+        summary: Architected custom PINN frameworks in PyTorch for nonlinear wave equations. Solved the Regularized Long-Wave (RLW) equation. Validated PINN models against traditional numerical solvers for high-fidelity results.
+        highlights:
+          - Custom PINN frameworks in PyTorch
+          - Nonlinear wave equation research
+          - High-fidelity numerical validation
+
+      - company: Upwork (Freelance)
+        position: AI Math & Scientific Computing Expert
+        location: Remote
+        start_date: 2023
+        end_date: Present
+        summary: Providing expert-level freelance services in scientific machine learning, AI math logic, and computational problem-solving.
+        highlights:
+          - 100% Job Success Score
+          - "$10k+ earned"
+          - 13 completed projects
+
+      - company: Jinnah Education System & Iv Schoolz
+        position: Mathematics Teacher
+        location: Pakistan
+        start_date: 2020
+        end_date: 2023
+        summary: Instructed students in advanced mathematics, focusing on foundational understanding and problem-solving skills.
+
+    Skills:
+      - name: Scientific Machine Learning
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, PINNs, DeepXDE, TensorFlow, Deep Learning, SciML, JAX"
+
+      - name: Mathematics & Physics
+        icon: fa-solid fa-square-root-variable
+        keywords: "Nonlinear PDEs, Numerical Analysis, Calculus, Linear Algebra, Fluid Dynamics, Probability, Geometry"
+
+      - name: Data & Programming
+        icon: fa-solid fa-code
+        keywords: "Python, MATLAB, NumPy, SciPy, Pandas, Matplotlib, Git / GitHub"
+
+    Languages:
+      - name: English
+        summary: "Fluent"
+
+      - name: Urdu
+        summary: "Native speaker"
