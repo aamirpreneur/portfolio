@@ -333,6 +333,19 @@
   }
 
   // ============================================
+  // DARK MODE TOGGLE
+  // ============================================
+  const themeToggle = document.getElementById('themeToggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const next = isDark ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  }
+
+  // ============================================
   // KEYBOARD ACCESSIBILITY
   // ============================================
   document.addEventListener('keydown', (e) => {
