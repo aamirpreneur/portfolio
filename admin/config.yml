@@ -1,0 +1,194 @@
+backend:
+  name: github
+  repo: aamirpreneur/portfolio
+  branch: main
+
+media_folder: "assets/img"
+public_folder: "assets/img"
+
+collections:
+  # 1. About Page
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About / Home Page"
+        name: "about"
+        file: "_pages/about.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
+          - {label: "Title", name: "title", widget: "hidden", default: "about"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - label: "Profile"
+            name: "profile"
+            widget: "object"
+            fields:
+              - {label: "Align", name: "align", widget: "select", options: ["left", "right"], default: "right"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Circular Image", name: "image_circular", widget: "boolean", default: false}
+              - {label: "More Info (HTML)", name: "more_info", widget: "text"}
+          - {label: "Show Selected Papers", name: "selected_papers", widget: "boolean", default: true}
+          - {label: "Show Social Icons", name: "social", widget: "boolean", default: true}
+          - label: "Announcements"
+            name: "announcements"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Scrollable", name: "scrollable", widget: "boolean", default: true}
+              - {label: "Limit", name: "limit", widget: "number", default: 5}
+          - label: "Latest Posts"
+            name: "latest_posts"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Scrollable", name: "scrollable", widget: "boolean", default: true}
+              - {label: "Limit", name: "limit", widget: "number", default: 3}
+          - {label: "Biography", name: "body", widget: "markdown"}
+
+      - label: "Teaching Page"
+        name: "teaching"
+        file: "_pages/teaching.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/teaching/"}
+          - {label: "Title", name: "title", widget: "string", default: "teaching"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Show in Nav", name: "nav", widget: "boolean", default: true}
+          - {label: "Nav Order", name: "nav_order", widget: "number", default: 6}
+          - {label: "Content", name: "body", widget: "markdown"}
+
+  # 2. CV Data
+  - name: "cv_data"
+    label: "CV / Resume"
+    files:
+      - label: "CV Content"
+        name: "cv"
+        file: "_data/cv.yml"
+        fields:
+          - label: "CV"
+            name: "cv"
+            widget: "object"
+            fields:
+              - {label: "Full Name", name: "name", widget: "string"}
+              - {label: "Title / Label", name: "label", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - label: "Social Networks"
+                name: "social_networks"
+                widget: "list"
+                fields:
+                  - {label: "Network", name: "network", widget: "select", options: ["GitHub", "LinkedIn", "X", "Google Scholar"]}
+                  - {label: "Username", name: "username", widget: "string"}
+              - label: "Sections"
+                name: "sections"
+                widget: "object"
+                fields:
+                  - label: "Education"
+                    name: "Education"
+                    widget: "list"
+                    fields:
+                      - {label: "Institution", name: "institution", widget: "string"}
+                      - {label: "Location", name: "location", widget: "string"}
+                      - {label: "Area / Field", name: "area", widget: "string"}
+                      - {label: "Degree Type", name: "studyType", widget: "string"}
+                      - {label: "Start Date", name: "start_date", widget: "string"}
+                      - {label: "End Date", name: "end_date", widget: "string"}
+                      - {label: "Score / GPA", name: "score", widget: "string", required: false}
+                      - label: "Highlights"
+                        name: "highlights"
+                        widget: "list"
+                        field: {label: "Item", name: "item", widget: "string"}
+                        required: false
+                  - label: "Experience"
+                    name: "Experience"
+                    widget: "list"
+                    fields:
+                      - {label: "Company", name: "company", widget: "string"}
+                      - {label: "Position", name: "position", widget: "string"}
+                      - {label: "Location", name: "location", widget: "string"}
+                      - {label: "Start Date", name: "start_date", widget: "string"}
+                      - {label: "End Date", name: "end_date", widget: "string"}
+                      - {label: "Summary", name: "summary", widget: "text", required: false}
+                      - label: "Highlights"
+                        name: "highlights"
+                        widget: "list"
+                        field: {label: "Item", name: "item", widget: "string"}
+                        required: false
+                  - label: "Skills"
+                    name: "Skills"
+                    widget: "list"
+                    fields:
+                      - {label: "Category Name", name: "name", widget: "string"}
+                      - {label: "Icon (FontAwesome)", name: "icon", widget: "string"}
+                      - {label: "Keywords (comma-separated)", name: "keywords", widget: "string"}
+                  - label: "Languages"
+                    name: "Languages"
+                    widget: "list"
+                    fields:
+                      - {label: "Language", name: "name", widget: "string"}
+                      - {label: "Proficiency", name: "summary", widget: "string"}
+
+      - label: "Social Links"
+        name: "socials"
+        file: "_data/socials.yml"
+        fields:
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "GitHub Username", name: "github_username", widget: "string", required: false}
+          - {label: "LinkedIn Username", name: "linkedin_username", widget: "string", required: false}
+          - {label: "X (Twitter) Username", name: "x_username", widget: "string", required: false}
+          - {label: "Google Scholar ID", name: "scholar_userid", widget: "string", required: false}
+          - {label: "Show RSS Icon", name: "rss_icon", widget: "boolean", default: true}
+
+  # 3. Projects
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "img", widget: "image", required: false}
+      - {label: "Importance (1 = highest)", name: "importance", widget: "number", default: 1}
+      - {label: "Category", name: "category", widget: "string", default: "research"}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+  # 4. Blog Posts
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: {label: "Tag", name: "tag", widget: "string"}
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        field: {label: "Category", name: "category", widget: "string"}
+      - {label: "Enable Comments", name: "giscus_comments", widget: "boolean", default: true}
+      - {label: "Show Related Posts", name: "related_posts", widget: "boolean", default: true}
+      - {label: "Enable Math", name: "math", widget: "boolean", default: false}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+  # 5. News / Announcements
+  - name: "news"
+    label: "News & Announcements"
+    folder: "_news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Inline (short announcement)", name: "inline", widget: "boolean", default: true}
+      - {label: "Show Related Posts", name: "related_posts", widget: "boolean", default: false}
+      - {label: "Content", name: "body", widget: "markdown"}
