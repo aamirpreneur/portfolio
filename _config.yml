@@ -7,7 +7,6 @@ baseurl: "/portfolio" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
-theme: minima
 
 # Exclude these files from the build
 exclude:
