@@ -1,0 +1,130 @@
+{
+  "basics": {
+    "name": "Aamir Shehzad",
+    "label": "PhD SciML Researcher & Applied Mathematician",
+    "image": "",
+    "email": "asphoto710@gmail.com",
+    "summary": "PhD computational researcher building custom Physics-Informed Neural Networks (PINNs) in PyTorch. 100% Job Success Score on Upwork.",
+    "location": {
+      "city": "Islamabad",
+      "countryCode": "PK",
+      "region": "Pakistan"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "aamirpreneur",
+        "url": "https://github.com/aamirpreneur"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Ghulam Ishaq Khan Institute of Engineering Sciences and Technology",
+      "position": "PhD Scholar / Researcher",
+      "location": "Topi, Pakistan",
+      "startDate": "2023-09-01",
+      "endDate": "",
+      "summary": "Architected custom PINN frameworks in PyTorch for nonlinear wave equations. Solved the Regularized Long-Wave (RLW) equation. Validated PINN models against traditional numerical solvers.",
+      "highlights": ["Custom PINN frameworks in PyTorch", "Nonlinear wave equation research", "High-fidelity numerical validation"]
+    },
+    {
+      "name": "Upwork (Freelance)",
+      "position": "AI Math & Scientific Computing Expert",
+      "location": "Remote",
+      "startDate": "2023-01-01",
+      "endDate": "",
+      "summary": "Expert-level freelance services in scientific machine learning, AI math logic, and computational problem-solving.",
+      "highlights": ["100% Job Success Score", "$10k+ earned", "13 completed projects"]
+    },
+    {
+      "name": "Jinnah Education System & Iv Schoolz",
+      "position": "Mathematics Teacher",
+      "location": "Pakistan",
+      "startDate": "2020-11-01",
+      "endDate": "2023-09-01",
+      "summary": "Instructed students in advanced mathematics, focusing on foundational understanding and problem-solving skills.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Ghulam Ishaq Khan Institute",
+      "location": "Topi, Pakistan",
+      "area": "Scientific Machine Learning / Applied Mathematics",
+      "studyType": "PhD (In Progress)",
+      "startDate": "2023-09-01",
+      "endDate": "",
+      "score": "",
+      "courses": ["PINNs", "Deep Learning", "Nonlinear PDEs"],
+      "highlights": ["Architecting custom PINN frameworks in PyTorch"]
+    },
+    {
+      "institution": "COMSATS University Islamabad",
+      "location": "Islamabad, Pakistan",
+      "area": "Mathematics",
+      "studyType": "MS",
+      "startDate": "2020-09-01",
+      "endDate": "2022-07-01",
+      "score": "CGPA: 3.72 / 4.00",
+      "courses": [],
+      "highlights": ["Thesis: Prediction of Diabetes Using Improved Artificial Neural Network Model"]
+    },
+    {
+      "institution": "University of Wah",
+      "location": "Wah, Pakistan",
+      "area": "Mathematics",
+      "studyType": "BS",
+      "startDate": "2016-10-01",
+      "endDate": "2020-07-01",
+      "score": "CGPA: 3.12 / 4.00",
+      "courses": [],
+      "highlights": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Scientific Machine Learning",
+      "level": "Expert",
+      "icon": "fa-solid fa-brain",
+      "keywords": ["PyTorch", "PINNs", "DeepXDE", "TensorFlow", "Deep Learning", "SciML", "JAX"]
+    },
+    {
+      "name": "Mathematics & Physics",
+      "level": "Expert",
+      "icon": "fa-solid fa-square-root-variable",
+      "keywords": ["Nonlinear PDEs", "Numerical Analysis", "Calculus", "Linear Algebra", "Fluid Dynamics"]
+    },
+    {
+      "name": "Data & Programming",
+      "level": "Expert",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "MATLAB", "NumPy", "SciPy", "Pandas", "Matplotlib", "Git"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "Urdu",
+      "fluency": "Native speaker",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Scientific Machine Learning",
+      "icon": "fa-solid fa-brain",
+      "keywords": ["PINNs", "Surrogate Modeling", "AI Math Logic", "Chain-of-Thought Reasoning"]
+    }
+  ],
+  "references": [],
+  "projects": [],
+  "volunteer": [],
+  "awards": [],
+  "certificates": [],
+  "publications": []
+}
