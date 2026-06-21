@@ -232,7 +232,7 @@
         return;
       }
 
-      if (!isValidEmail(email)) {
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         showFormStatus('Please enter a valid email address.', 'error');
         return;
       }
@@ -269,8 +269,6 @@
     if (formStatus) {
       formStatus.textContent = message;
       formStatus.className = 'form-status ' + type;
-
-      // Auto-hide after 5s
       setTimeout(() => {
         formStatus.className = 'form-status';
       }, 5000);

@@ -1,7 +1,7 @@
 # Hero Section
 hero:
   available_for_freelance: true
-  greeting: "Hi, I'm"
+  greeting: "Hi, I am"
   name: "Aamir S."
   tagline: "PhD SciML Researcher & Applied Mathematician."
   description: "I build custom Physics-Informed Neural Networks (PINNs) in PyTorch to solve complex PDE problems where standard tools fail. Specializing in AI Math Logic, Chain-of-Thought reasoning, and high-fidelity surrogate modeling."
@@ -24,20 +24,20 @@ about:
     - number: "13"
       label: "Completed Projects"
 
-# Skills Section
+# Skills Section (icons are now hardcoded as SVGs in index.html)
 skills:
   title: "Technologies & Expertise"
   subtitle: "My computational and mathematical toolkit."
   categories:
     - title: "Scientific Machine Learning"
-      icon: "🧠"
+      icon: "SciML"
       tags: ["PyTorch", "PINNs", "DeepXDE", "TensorFlow", "Deep Learning", "SciML", "JAX"]
     - title: "Mathematics & Physics"
-      icon: "📐"
+      icon: "Math"
       tags: ["Nonlinear PDEs", "Numerical Analysis", "Calculus", "Linear Algebra", "Fluid Dynamics", "Probability", "Geometry"]
     - title: "Data & Programming"
-      icon: "💻"
-      tags: ["Python", "NumPy", "SciPy", "Pandas", "Matplotlib", "Algorithm Development", "Data Analysis"]
+      icon: "Code"
+      tags: ["Python", "MATLAB", "NumPy", "SciPy", "Pandas", "Matplotlib", "Git / GitHub"]
 
 # Experience Section
 experience:
@@ -84,7 +84,7 @@ testimonials:
   title: "Client Feedback"
   subtitle: "What my Upwork clients say about my deliverables."
   reviews:
-    - quote: "This guy is the best freelancer I've ever worked with on Upwork. Brainstorming and conversating with him was incredible. Working with you feels less like a contractor and more like a partner."
+    - quote: "This guy is the best freelancer I have ever worked with on Upwork. Brainstorming and conversating with him was incredible. Working with you feels less like a contractor and more like a partner."
       author: "Romaine"
       role: "Discount Formula Calculator Client"
     - quote: "Aamir was technical, diligent, and thorough in his delivery. Quality of his deliverables was very high and helped us achieve the outcomes we were targeting. Would work with him again."
@@ -96,7 +96,7 @@ testimonials:
 
 # Contact Section
 contact:
-  title: "Let's Solve Your Problem"
+  title: "Let us Solve Your Problem"
   subtitle: "Describe your problem in a message. I will tell you in plain terms whether I can solve it and exactly how."
   email: "Hire me on Upwork"
   location: "Islamabad, Pakistan"
@@ -107,7 +107,7 @@ contact:
     linkedin: "https://linkedin.com/"
     twitter: "https://twitter.com/"
     dribbble: ""
-  formspree_url: "https://formspree.io/f/your-form-id"
+  formspree_url: "https://formspree.io/f/xovdyroj"
 
 # Footer
 footer:
