@@ -1,4 +1,4 @@
-# Alex Morgan — Personal Portfolio Website
+# Aamir Shehzad — Personal Portfolio Website
 
 A clean, minimal, and premium personal portfolio website built with vanilla HTML, CSS, and JavaScript. Designed for GitHub Pages hosting.
 
