@@ -249,17 +249,19 @@
         });
 
         if (response.ok) {
-          showFormStatus('Thank you! Your message has been sent successfully.', 'success');
+          showFormStatus("Thank you! Your message has been sent. I'll get back to you soon.", 'success');
           contactForm.reset();
         } else {
-          showFormStatus('Something went wrong. Please try again.', 'error');
+          const data = await response.json().catch(() => ({}));
+          const errMsg = data.errors ? data.errors.map(e => e.message).join(', ') : 'Something went wrong. Please try again.';
+          showFormStatus(errMsg, 'error');
         }
-      } catch (err) {
-        showFormStatus('Network error. Please try again later.', 'error');
+      } catch {
+        showFormStatus('Network error. Please check your connection and try again.', 'error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `Send Message <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>`;
       }
-
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = 'Send Message <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
     });
   }
 
@@ -273,21 +275,11 @@
     }
   }
 
-  // ============================================
-  // SMOOTH SCROLL FOR ANCHOR LINKS
-  // ============================================
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      const targetId = anchor.getAttribute('href');
-      if (targetId === '#') return;
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
 
-      const target = document.querySelector(targetId);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
+  // Smooth scroll is handled by CSS: scroll-behavior: smooth + scroll-padding-top on html
 
   // ============================================
   // ABOUT HIGHLIGHTS COUNTER ANIMATION
@@ -336,6 +328,19 @@
     }
 
     requestAnimationFrame(update);
+  }
+
+  // ============================================
+  // DARK MODE TOGGLE
+  // ============================================
+  const themeToggle = document.getElementById('themeToggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const next = isDark ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
   }
 
   // ============================================
