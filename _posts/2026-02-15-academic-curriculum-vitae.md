@@ -1,37 +1,29 @@
 ---
 layout: post
-title: "PhD Scholar & SciML Researcher: Academic Curriculum Vitae"
-category: "Career"
-excerpt: "A summary of my academic journey, research focus, and teaching experience as a PhD candidate specializing in Scientific Machine Learning."
+title: "Building an Academic CV That Stands Out in Scientific Computing"
+date: 2026-02-15 10:00:00+0500
+description: Tips for crafting an academic CV for researchers in computational mathematics and scientific machine learning.
+tags: [career, academia]
+categories: [tutorials]
+giscus_comments: true
+related_posts: true
 ---
 
-My academic journey has always been driven by the desire to merge rigorous mathematical theory with cutting-edge computational tools. As a PhD Scholar and Researcher in Scientific Machine Learning (SciML), my focus is on developing robust methodologies for solving complex physical systems using Physics-Informed Neural Networks (PINNs).
+A well-structured academic CV is essential for PhD researchers and scientific computing professionals. Here are key elements to include:
 
-### Research Experience
-*   **PhD Scholar** | *Ghulam Ishaq Khan Institute of Engineering Sciences and Technology, Pakistan* (Sep 2023 - Present)
-    * Architected and implemented custom PINN frameworks in PyTorch, tailored to solve challenging nonlinear wave equations.
-    * Implemented and analyzed adaptive weighting and other strategies to overcome training difficulties in PINNs, significantly improving model convergence and accuracy.
-    * Successfully solved the Regularized Long-Width (RLW) equation to model soliton interactions and undular bores.
-    * Validated PINN models against traditional numerical solvers, demonstrating high-fidelity results and achieving a comparable degree of accuracy for soliton interaction problems.
-    * Focusing on the underlying physics of systems to ensure models are robust and generalizable.
+## Essential Sections
 
-### Teaching Experience
-*   **Mathematics Teacher** | *Jinnah Education System, Wah, Pakistan* (Nov 2020 - Sep 2023)
-*   **Math Teacher** | *Nova City School, Wah Cantt* (Nov 2021 - Feb 2022)
-*   **Math Teacher** | *Iv Schoolz*
+1. **Research Interests** - Be specific about your niche (e.g., PINNs for nonlinear PDEs, not just "machine learning")
+2. **Publications** - List in reverse chronological order with DOIs
+3. **Technical Skills** - Differentiate between expert and working knowledge
+4. **Teaching Experience** - Include courses taught and student evaluations
+5. **Industry Experience** - Freelance work counts, especially with metrics like Job Success Score
 
-### Education
-*   **MS Mathematics** | *COMSATS University Islamabad, Wah Campus* (Sep 2020 - Jul 2022) | CGPA: 3.72 / 4.00 | Thesis: Prediction of Diabetes Using Improved Artificial Neural Network Model
-*   **BS Mathematics** | *University of Wah, Wah Cantt* (Oct 2016 - Jul 2020) | CGPA: 3.12 / 4.00
-*   **FSc Pre-Engineering** | *Army Public School & College, Kharian Cantt* (Jul 2014 - Aug 2016)
-*   **Matric (Science)** | *F.G Boys Public School, Kharian Cantt* (Apr 2012 - Jun 2014)
+## Tips for SciML Researchers
 
-### Conferences and Seminars
-*   **22nd International Pure Mathematics Conference 2022** | Quaid-i-Azam University, Islamabad (Aug 2022)
-*   **International Workshop on “Recent Trends in Modeling & its Applications-2022 (IWRTMIA 2022)** | Department of Mathematics, Post Graduate College, Ghazipur, India (Sep 2022)
-*   **Recent Developments in Applied and Computational Mathematics** | COMSATS University Islamabad (May 2022)
-*   **OUD Titles Aligned with "SNC 2020"** | Nova City School (Feb 2022)
+- Highlight the **interdisciplinary** nature of your work
+- Include links to code repositories and live demos
+- Mention specific PDEs or physical systems you have worked with
+- Quantify results where possible (accuracy improvements, speedups)
 
-### Volunteering
-*   **Organizer** | COMSATS Mathematical Olympiad 2022 (Mar 2022)
-*   **President** | Professional Society Mathematics Department, University of Wah (2019 - 2020)
+The key is to present yourself as someone who bridges deep learning and advanced mathematics - a rare and valuable combination in today's research landscape.
