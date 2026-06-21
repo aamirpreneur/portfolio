@@ -220,39 +220,46 @@
   const formStatus = document.getElementById('formStatus');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const name = document.getElementById('contactName').value.trim();
       const email = document.getElementById('contactEmail').value.trim();
       const message = document.getElementById('contactMessage').value.trim();
 
-      // Basic validation
       if (!name || !email || !message) {
         showFormStatus('Please fill in all required fields.', 'error');
         return;
       }
 
-      if (!isValidEmail(email)) {
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         showFormStatus('Please enter a valid email address.', 'error');
         return;
       }
 
-      // Simulate form submission (replace with actual Formspree endpoint)
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending...';
 
-      // Simulated success after 1.5s
-      setTimeout(() => {
-        showFormStatus('Thank you! Your message has been sent successfully. I\'ll get back to you soon.', 'success');
-        contactForm.reset();
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = `
-          Send Message
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-        `;
-      }, 1500);
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          showFormStatus('Thank you! Your message has been sent successfully.', 'success');
+          contactForm.reset();
+        } else {
+          showFormStatus('Something went wrong. Please try again.', 'error');
+        }
+      } catch (err) {
+        showFormStatus('Network error. Please try again later.', 'error');
+      }
+
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Send Message <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
     });
   }
 
@@ -260,16 +267,10 @@
     if (formStatus) {
       formStatus.textContent = message;
       formStatus.className = 'form-status ' + type;
-
-      // Auto-hide after 5s
       setTimeout(() => {
         formStatus.className = 'form-status';
       }, 5000);
     }
-  }
-
-  function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
   // ============================================
