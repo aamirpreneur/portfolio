@@ -37,7 +37,7 @@ skills:
       tags: ["Nonlinear PDEs", "Numerical Analysis", "Calculus", "Linear Algebra", "Fluid Dynamics", "Probability", "Geometry"]
     - title: "Data & Programming"
       icon: "💻"
-      tags: ["Python", "NumPy", "SciPy", "Pandas", "Matplotlib", "Algorithm Development", "Data Analysis"]
+      tags: ["Python", "MATLAB", "NumPy", "SciPy", "Pandas", "Matplotlib", "Git / GitHub"]
 
 # Experience Section
 experience:
@@ -107,7 +107,7 @@ contact:
     linkedin: "https://linkedin.com/"
     twitter: "https://twitter.com/"
     dribbble: ""
-  formspree_url: "https://formspree.io/f/your-form-id"
+  formspree_url: "https://formspree.io/f/xovdyroj"
 
 # Footer
 footer:

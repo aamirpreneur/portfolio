@@ -45,6 +45,7 @@ layout: null
         <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
         <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
         <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
         <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
         <li><a href="#blog" class="nav-link" data-section="blog">Blog</a></li>
         <li><a href="#contact" class="nav-cta" id="navContactBtn">Let's Talk</a></li>
@@ -141,17 +142,51 @@ layout: null
       </div>
 
       <div class="skills-categories">
-        {% for category in site.data.content.skills.categories %}
-        <div class="skill-category reveal reveal-delay-{{ forloop.index0 }}">
-          <div class="skill-category-icon">{{ category.icon }}</div>
-          <h3 class="skill-category-title">{{ category.title }}</h3>
+        <div class="skill-category reveal reveal-delay-0">
+          <div class="skill-category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="skill-category-title">Scientific Machine Learning</h3>
           <div class="skill-tags">
-            {% for tag in category.tags %}
-            <span class="skill-tag">{{ tag }}</span>
-            {% endfor %}
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">PINNs</span>
+            <span class="skill-tag">DeepXDE</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">SciML</span>
+            <span class="skill-tag">JAX</span>
           </div>
         </div>
-        {% endfor %}
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><circle cx="19" cy="17" r="3"/><path d="m21.5 19.5-1.5-1.5"/></svg>
+          </div>
+          <h3 class="skill-category-title">Mathematics & Physics</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Nonlinear PDEs</span>
+            <span class="skill-tag">Numerical Analysis</span>
+            <span class="skill-tag">Calculus</span>
+            <span class="skill-tag">Linear Algebra</span>
+            <span class="skill-tag">Fluid Dynamics</span>
+            <span class="skill-tag">Probability</span>
+            <span class="skill-tag">Geometry</span>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="m9 8 2 2-2 2M13 12h3"/></svg>
+          </div>
+          <h3 class="skill-category-title">Data & Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">SciPy</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Git / GitHub</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -162,9 +197,9 @@ layout: null
   <section class="section" id="projects">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Selected Work</span>
-        <h2 class="section-title">Projects I've built</h2>
-        <p class="section-subtitle">A collection of recent projects showcasing my skills in design and development.</p>
+        <span class="section-label">Research & Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A selection of my research projects in scientific machine learning and applied mathematics.</p>
       </div>
 
       <div class="projects-grid">
@@ -314,9 +349,9 @@ layout: null
   <section class="section section--alt" id="blog">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Blog</span>
-        <h2 class="section-title">Latest articles</h2>
-        <p class="section-subtitle">Thoughts on design, development, and the intersection of technology and creativity.</p>
+        <span class="section-label">Research Notes</span>
+        <h2 class="section-title">Latest Articles</h2>
+        <p class="section-subtitle">Insights and write-ups on scientific machine learning, mathematical analysis, and my research journey.</p>
       </div>
 
       <div class="blog-grid">
@@ -398,6 +433,8 @@ layout: null
         </div>
 
         <form class="contact-form reveal reveal-delay-1" id="contactForm" action="{{ site.data.content.contact.formspree_url }}" method="POST">
+          <input type="hidden" name="_subject" value="New message from Portfolio Contact Form">
+          <input type="hidden" name="_next" value="https://aamirpreneur.github.io/portfolio/">
           <div class="form-row">
             <div class="form-group">
               <label for="contactName">Your Name</label>
@@ -414,7 +451,7 @@ layout: null
           </div>
           <div class="form-group">
             <label for="contactMessage">Message</label>
-            <textarea id="contactMessage" name="message" placeholder="Tell me about your project..." required></textarea>
+            <textarea id="contactMessage" name="message" placeholder="Describe your problem or project..." required></textarea>
           </div>
           <div class="form-status" id="formStatus"></div>
           <button type="submit" class="btn btn--primary" id="contactSubmitBtn">
@@ -444,6 +481,7 @@ layout: null
             <li><a href="#skills" class="footer-link">Skills</a></li>
             <li><a href="#projects" class="footer-link">Projects</a></li>
             <li><a href="#experience" class="footer-link">Experience</a></li>
+            <li><a href="#education" class="footer-link">Education</a></li>
           </ul>
         </div>
 
