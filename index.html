@@ -25,8 +25,6 @@ layout: null
   <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
   
-  <!-- Sveltia CMS Identity Widget -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -165,7 +163,7 @@ layout: null
       <div class="section-header reveal">
         <span class="section-label">Selected Work</span>
         <h2 class="section-title">Projects I've built</h2>
-        <p class="section-subtitle">A collection of recent projects showcasing my skills in design and development.</p>
+        <p class="section-subtitle">Research projects in Scientific Machine Learning, Physics-Informed Neural Networks, and AI math reasoning.</p>
       </div>
 
       <div class="projects-grid">
@@ -229,12 +227,15 @@ layout: null
         {% endfor %}
       </div>
 
+      {% assign resume_url = site.data.content.contact.resume_url %}
+      {% if resume_url and resume_url != "#" and resume_url != "" %}
       <div class="resume-download reveal">
-        <a href="#" class="btn btn--accent" id="resumeDownloadBtn">
+        <a href="{{ resume_url }}" class="btn btn--accent" id="resumeDownloadBtn" download>
           <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download My Resume
         </a>
       </div>
+      {% endif %}
     </div>
   </section>
 
@@ -317,7 +318,7 @@ layout: null
       <div class="section-header reveal">
         <span class="section-label">Blog</span>
         <h2 class="section-title">Latest articles</h2>
-        <p class="section-subtitle">Thoughts on design, development, and the intersection of technology and creativity.</p>
+        <p class="section-subtitle">Insights on Scientific Machine Learning, Physics-Informed Neural Networks, and advanced mathematics.</p>
       </div>
 
       <div class="blog-grid">
@@ -386,15 +387,21 @@ layout: null
           </div>
 
           <div class="social-links">
-            <a href="{{ site.data.content.contact.social.github }}" class="social-link" aria-label="GitHub Profile">
+            <a href="{{ site.data.content.contact.social.github }}" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="{{ site.data.content.contact.social.linkedin }}" class="social-link" aria-label="LinkedIn Profile">
+            {% assign li = site.data.content.contact.social.linkedin %}
+            {% if li and li != "" and li != "https://linkedin.com/" %}
+            <a href="{{ li }}" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             </a>
-            <a href="{{ site.data.content.contact.social.twitter }}" class="social-link" aria-label="Twitter Profile">
+            {% endif %}
+            {% assign tw = site.data.content.contact.social.twitter %}
+            {% if tw and tw != "" and tw != "https://twitter.com/" %}
+            <a href="{{ tw }}" class="social-link" aria-label="Twitter Profile" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
             </a>
+            {% endif %}
           </div>
         </div>
 
@@ -445,6 +452,7 @@ layout: null
             <li><a href="#skills" class="footer-link">Skills</a></li>
             <li><a href="#projects" class="footer-link">Projects</a></li>
             <li><a href="#experience" class="footer-link">Experience</a></li>
+            <li><a href="#education" class="footer-link">Education</a></li>
           </ul>
         </div>
 
@@ -460,10 +468,10 @@ layout: null
         <div>
           <h4 class="footer-heading">Connect</h4>
           <ul class="footer-links">
-            <li><a href="{{ site.data.content.contact.social.github }}" class="footer-link">GitHub</a></li>
-            <li><a href="{{ site.data.content.contact.social.linkedin }}" class="footer-link">LinkedIn</a></li>
-            <li><a href="{{ site.data.content.contact.social.twitter }}" class="footer-link">Twitter</a></li>
-            {% if site.data.content.contact.social.dribbble != "" %}<li><a href="{{ site.data.content.contact.social.dribbble }}" class="footer-link">Dribbble</a></li>{% endif %}
+            <li><a href="{{ site.data.content.contact.social.github }}" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            {% if site.data.content.contact.social.linkedin != "" and site.data.content.contact.social.linkedin != "https://linkedin.com/" %}<li><a href="{{ site.data.content.contact.social.linkedin }}" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>{% endif %}
+            {% if site.data.content.contact.social.twitter != "" and site.data.content.contact.social.twitter != "https://twitter.com/" %}<li><a href="{{ site.data.content.contact.social.twitter }}" class="footer-link" target="_blank" rel="noopener noreferrer">Twitter</a></li>{% endif %}
+            {% if site.data.content.contact.social.dribbble != "" %}<li><a href="{{ site.data.content.contact.social.dribbble }}" class="footer-link" target="_blank" rel="noopener noreferrer">Dribbble</a></li>{% endif %}
           </ul>
         </div>
       </div>
@@ -471,15 +479,19 @@ layout: null
       <div class="footer-bottom">
         <p class="footer-copyright">{{ site.data.content.footer.copyright }}</p>
         <div class="footer-socials">
-          <a href="{{ site.data.content.contact.social.github }}" class="footer-social" aria-label="GitHub">
+          <a href="{{ site.data.content.contact.social.github }}" class="footer-social" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           </a>
-          <a href="{{ site.data.content.contact.social.linkedin }}" class="footer-social" aria-label="LinkedIn">
+          {% if site.data.content.contact.social.linkedin != "" and site.data.content.contact.social.linkedin != "https://linkedin.com/" %}
+          <a href="{{ site.data.content.contact.social.linkedin }}" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-          <a href="{{ site.data.content.contact.social.twitter }}" class="footer-social" aria-label="Twitter">
+          {% endif %}
+          {% if site.data.content.contact.social.twitter != "" and site.data.content.contact.social.twitter != "https://twitter.com/" %}
+          <a href="{{ site.data.content.contact.social.twitter }}" class="footer-social" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
           </a>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -491,17 +503,5 @@ layout: null
   </button>
 
   <script src="{{ site.baseurl }}/script.js"></script>
-  
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </body>
 </html>
